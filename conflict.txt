@@ -1,1 +1,1 @@
-Git Version control
+Git for Developers
