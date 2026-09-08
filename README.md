@@ -1,1 +1,1 @@
-# Devops project
+Git and devops
