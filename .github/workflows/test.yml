@@ -1,0 +1,16 @@
+name: Test Project
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get repository
+        uses: actions/checkout@v4
+
+      - name: Run test
+        run: echo "GitHub Actions is working"
