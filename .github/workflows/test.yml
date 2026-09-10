@@ -12,8 +12,21 @@ jobs:
       - name: Get repository
         uses: actions/checkout@v4
 
-      - name: Run test
+      - name: Run tests
         run: echo "Running tests..."
 
       - name: Test result
         run: echo "Tests passed!"
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get repository
+        uses: actions/checkout@v4
+
+      - name: Build project
+        run: echo "Building project..."
+
+      - name: Build result
+        run: echo "Build successful!"
