@@ -5,7 +5,7 @@ on:
   pull_request:
 
 jobs:
-    needs: test
+  test :
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +19,8 @@ jobs:
         run: echo "Tests passed!"
 
   build:
-    runs-on: ubuntu-latest
+     needs: test
+     runs-on: ubuntu-latest
 
     steps:
       - name: Get repository
