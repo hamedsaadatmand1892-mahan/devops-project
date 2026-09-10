@@ -16,7 +16,7 @@ jobs:
         run: echo "Running tests..."
 
       - name: Test result
-        run: echo "Tests passed!"
+        run:  exit 1
 
   build:
       needs: test
