@@ -37,5 +37,11 @@ jobs:
       - name: Create build file
         run: echo "Build completed successfully" > build.txt
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-files
+          path: build.txt
+
       - name: Build result
         run: echo "Build successful!"
