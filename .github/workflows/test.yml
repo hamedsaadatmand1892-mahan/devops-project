@@ -43,10 +43,11 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Flask image
-        run: docker build -t hamed13579169/my-flask-app:latest ./flask-app 
+        run: docker build -t hamed13579169/my-flask-app:${{ github.ref_name }} ./flask-app
 
       - name: Push Flask image
-        run: docker push hamed13579169/my-flask-app:latest
+        run: docker push hamed13579169/my-flask-app:${{ github.ref_name }}
+
 
   build:
     needs: test
