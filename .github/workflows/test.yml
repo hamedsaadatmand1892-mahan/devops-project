@@ -66,3 +66,6 @@ jobs:
 
       - name: Push Docker image
         run: docker push hamed13579169/my-python-app:latest
+
+      - name: Push Docker image
+        run: docker push hamed13579169/my-python-app:latest
