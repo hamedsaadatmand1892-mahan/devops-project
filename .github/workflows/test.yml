@@ -4,9 +4,9 @@ name: Test Project
 on:
   push:
     branches:
-      -master
+      - master
     tags:
-      -'v*'
+      - 'v*'
   pull_request:
 
 jobs:
